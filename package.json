@@ -7,7 +7,7 @@
     "start": "pm2 start . --attach --name X-BOT-MD",
     "stop": "pm2 stop . --attach --name X-BOT-MD"
   },
-  "author": "ASWIN SPARKY",
+  "author": "KAMRAN HASIL",
   "license": "ISC",
   "repository": {
     "type": "git",
