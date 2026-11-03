@@ -14,7 +14,7 @@ if (fs.existsSync("config.env")) {
 	});
 }
 
-const DATABASE_URL = process.env.DATABASE_URL || "postgresql://aswin:D6dq0vk1xoQx_OO-Iv4ESQ@rough-doxle-2360.7s5.aws-ap-south-1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"; // Corrected SQLite format
+const DATABASE_URL = process.env.DATABASE_URL || "postgresql://kamran:<ENTER-SQL-USER-PASSWORD>@lake-prawn-22498.jxf.gcp-europe-west1.cockroachlabs.cloud:26257/defaultdb?sslmode=verify-full"; // Corrected SQLite format
 
 if (!DATABASE_URL.startsWith("sqlite://") && !DATABASE_URL.startsWith("postgres://") && !DATABASE_URL.startsWith("postgresql://")) {
 	throw new Error("Invalid DATABASE_URL format. Use 'sqlite://' or 'postgres://'");
@@ -44,7 +44,7 @@ module.exports = {
 	ALIVE: process.env.ALIVE || "Hello i'm alive",
 	ALWAYS_ONLINE: toBool(process.env.ALWAYS_ONLINE || "false"),
 	BGMBOT : toBool(process.env.BGMBOT || "false"),
-	API: "https://api-aswin-sparky.koyeb.app",
+	API: "",
 	AUDIO_DATA: process.env.AUDIO_DATA || "K A M I;Kamran Hasil;K A M I bot",
 	AUTO_STATUS_VIEW: toBool(process.env.AUTO_STATUS_VIEW || "true"),
 	BOT_INFO: process.env.BOT_INFO || "K A M I;Kamran Hasil;K A M I bot",
